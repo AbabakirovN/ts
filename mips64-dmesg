@@ -1,0 +1,313 @@
+[    0.000000] OF: fdt: No chosen node found, continuing without
+[    0.000000] Linux version 5.7.0-1-5kc-malta (debian-kernel@lists.debian.org) (gcc version 9.3.0 (Debian 9.3.0-14), GNU ld (GNU Binutils for Debian) 2.34) #1 SMP Debian 5.7.6-1 (2020-06-24)
+[    0.000000] earlycon: uart8250 at I/O port 0x3f8 (options '38400n8')
+[    0.000000] printk: bootconsole [uart8250] enabled
+[    0.000000] CPU0 revision is: 00018900 (MIPS 5KE)
+[    0.000000] OF: fdt: No chosen node found, continuing without
+[    0.000000] MIPS: machine is mti,malta
+[    0.000000] Software DMA cache coherency enabled
+[    0.000000] Initial ramdisk at: 0x900000000e8c0000 (24137190 bytes)
+[    0.000000] Primary instruction cache 8kB, VIPT, 2-way, linesize 32 bytes.
+[    0.000000] Primary data cache 8kB, 2-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000000000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000000fffffff]
+[    0.000000]   node   0: [mem 0x0000000090000000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x00000000bfffffff]
+[    0.000000] On node 0 totalpages: 262144
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 4096 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 12224 pages used for memmap
+[    0.000000]   DMA32 zone: 258048 pages, LIFO batch:63
+[    0.000000] percpu: Embedded 30 pages/cpu s83488 r8192 d31200 u122880
+[    0.000000] pcpu-alloc: s83488 r8192 d31200 u122880 alloc=30*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 249856
+[    0.000000] Kernel command line: rd_start=0xffffffff8e8c0000 rd_size=24137190 root=LABEL=rootfs console=ttyS0
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] Cache parity protection disabled
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 958836K/1048576K available (8518K kernel code, 1029K rwdata, 2324K rodata, 2060K init, 358K bss, 89740K reserved, 0K cma-reserved)
+[    0.000000] random: get_random_u64 called from __kmem_cache_create+0x64/0x520 with crng_init=0
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 25879 entries in 102 pages
+[    0.000000] ftrace: allocated 102 pages with 4 groups
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 256
+[    0.000000] CPU frequency 200.00 MHz
+[    0.000000] clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112489795 ns
+[    0.000113] sched_clock: 32 bits at 100MHz, resolution 9ns, wraps every 21474707451ns
+[    0.007720] Console: colour dummy device 80x25
+[    0.009850] Calibrating delay loop... 1759.23 BogoMIPS (lpj=3518464)
+[    0.039293] pid_max: default: 32768 minimum: 301
+[    0.040664] LSM: Security Framework initializing
+[    0.041853] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    0.044899] AppArmor: AppArmor initialized
+[    0.045275] TOMOYO Linux initialized
+[    0.046903] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.047382] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.085729] Performance counters: Either hardware does not support performance counters, or not yet implemented.
+[    0.087526] rcu: Hierarchical SRCU implementation.
+[    0.096107] smp: Bringing up secondary CPUs ...
+[    0.096506] smp: Brought up 1 node, 1 CPU
+[    0.108937] devtmpfs: initialized
+[    0.117376] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.118068] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.123379] thermal_sys: Registered thermal governor 'fair_share'
+[    0.123491] thermal_sys: Registered thermal governor 'step_wise'
+[    0.129435] NET: Registered protocol family 16
+[    0.132307] audit: initializing netlink subsys (disabled)
+[    0.136608] audit: type=2000 audit(1602409935.112:1): state=initialized audit_enabled=0 res=1
+[    0.147458] FPU Affinity set after 14072 emulations
+[    0.170457] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.469629] iommu: Default domain type: Translated 
+[    0.473331] vgaarb: loaded
+[    0.474813] SCSI subsystem initialized
+[    0.475841] libata version 3.00 loaded.
+[    0.478005] PCI host bridge to bus 0000:00
+[    0.478875] pci_bus 0000:00: root bus resource [mem 0x10000000-0x17ffffff]
+[    0.479236] pci_bus 0000:00: root bus resource [io  0x1000-0x1fffff]
+[    0.479549] pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+[    0.480003] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.481588] pci 0000:00:00.0: [11ab:4620] type 00 class 0x060000
+[    0.482779] pci 0000:00:00.0: [Firmware Bug]: reg 0x14: invalid BAR (can't size)
+[    0.483111] pci 0000:00:00.0: [Firmware Bug]: reg 0x18: invalid BAR (can't size)
+[    0.483419] pci 0000:00:00.0: [Firmware Bug]: reg 0x1c: invalid BAR (can't size)
+[    0.483723] pci 0000:00:00.0: [Firmware Bug]: reg 0x20: invalid BAR (can't size)
+[    0.484044] pci 0000:00:00.0: [Firmware Bug]: reg 0x24: invalid BAR (can't size)
+[    0.487531] pci 0000:00:0a.0: [8086:7110] type 00 class 0x060100
+[    0.488312] pci 0000:00:0a.1: [8086:7111] type 00 class 0x010180
+[    0.488760] pci 0000:00:0a.1: reg 0x20: [io  0x0000-0x000f]
+[    0.489039] pci 0000:00:0a.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.489341] pci 0000:00:0a.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.489611] pci 0000:00:0a.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.489890] pci 0000:00:0a.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.490819] pci 0000:00:0a.2: [8086:7112] type 00 class 0x0c0300
+[    0.491101] pci 0000:00:0a.2: reg 0x20: [io  0x0000-0x001f]
+[    0.491506] pci 0000:00:0a.3: [8086:7113] type 00 class 0x068000
+[    0.492278] pci 0000:00:0a.3: quirk: [io  0x1000-0x103f] claimed by PIIX4 ACPI
+[    0.492649] pci 0000:00:0a.3: quirk: [io  0x1100-0x110f] claimed by PIIX4 SMB
+[    0.493350] pci 0000:00:12.0: [1013:00b8] type 00 class 0x030000
+[    0.493804] pci 0000:00:12.0: reg 0x10: [mem 0x00000000-0x01ffffff pref]
+[    0.494081] pci 0000:00:12.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.494443] pci 0000:00:12.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+[    0.495056] pci 0000:00:12.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[    0.495637] pci 0000:00:13.0: [8086:100e] type 00 class 0x020000
+[    0.495913] pci 0000:00:13.0: reg 0x10: [mem 0x00000000-0x0001ffff]
+[    0.496154] pci 0000:00:13.0: reg 0x14: [io  0x0000-0x003f]
+[    0.496385] pci 0000:00:13.0: reg 0x30: [mem 0x00000000-0x0003ffff pref]
+[    0.497197] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 00
+[    0.498623] pci 0000:00:12.0: BAR 0: assigned [mem 0x10000000-0x11ffffff pref]
+[    0.499263] pci 0000:00:13.0: BAR 6: assigned [mem 0x12000000-0x1203ffff pref]
+[    0.499617] pci 0000:00:13.0: BAR 0: assigned [mem 0x12040000-0x1205ffff]
+[    0.499862] pci 0000:00:12.0: BAR 6: assigned [mem 0x12060000-0x1206ffff pref]
+[    0.500145] pci 0000:00:12.0: BAR 1: assigned [mem 0x12070000-0x12070fff]
+[    0.500425] pci 0000:00:13.0: BAR 1: assigned [io  0x1040-0x107f]
+[    0.500687] pci 0000:00:0a.2: BAR 4: assigned [io  0x1080-0x109f]
+[    0.500962] pci 0000:00:0a.1: BAR 4: assigned [io  0x10a0-0x10af]
+[    0.511566] NetLabel: Initializing
+[    0.511786] NetLabel:  domain hash size = 128
+[    0.511985] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.513138] NetLabel:  unlabeled traffic allowed by default
+[    0.514793] clocksource: Switched to clocksource MIPS
+[    0.582734] VFS: Disk quotas dquot_6.6.0
+[    0.583229] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.588112] AppArmor: AppArmor Filesystem Enabled
+[    0.602362] NET: Registered protocol family 2
+[    0.608953] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.609548] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.610099] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.610606] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.611876] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.612348] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.614491] NET: Registered protocol family 1
+[    0.615045] NET: Registered protocol family 44
+[    0.616201] pci 0000:00:0a.2: enabling device (0000 -> 0001)
+[    0.617124] PCI: CLS 0 bytes, default 32
+[    0.622137] Trying to unpack rootfs image as initramfs...
+[    1.095738] random: fast init done
+[    1.820090] Freeing initrd memory: 23568K
+[    1.823091] Initialise system trusted keyrings
+[    1.825531] Key type blacklist registered
+[    1.826260] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    1.835064] zbud: loaded
+[    1.838104] integrity: Platform Keyring initialized
+[    1.838401] Key type asymmetric registered
+[    1.838703] Asymmetric key parser 'x509' registered
+[    1.839069] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    1.839949] io scheduler mq-deadline registered
+[    1.842961] cirrusfb 0000:00:12.0: enabling device (0000 -> 0002)
+[    1.844195] cirrusfb 0000:00:12.0: Cirrus Logic chipset on PCI bus, RAM (4096 kB) at 0x10000000
+[    2.132040] Console: switching to colour frame buffer device 80x30
+[    2.148546] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    2.158800] printk: console [ttyS0] disabled
+[    2.188553] serial8250.0: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    2.190867] printk: console [ttyS0] enabled
+[    2.191689] printk: bootconsole [uart8250] disabled
+[    2.223320] serial8250.0: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+[    2.251022] serial8250.0: ttyS2 at MMIO 0x1f000900 (irq = 20, base_baud = 230400) is a 16550A
+[    2.256974] mousedev: PS/2 mouse device common for all mice
+[    2.261343] rtc_cmos 70.rtc: registered as rtc0
+[    2.262401] rtc_cmos 70.rtc: setting system clock to 2020-10-11T09:52:19 UTC (1602409939)
+[    2.263895] rtc_cmos 70.rtc: alarms up to one day, 242 bytes nvram
+[    2.267005] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.268853] NET: Registered protocol family 10
+[    2.296845] process '/usr/bin/kmod' started with executable stack
+[    2.556353] Segment Routing with IPv6
+[    2.557144] mip6: Mobile IPv6
+[    2.557530] NET: Registered protocol family 17
+[    2.558258] mpls_gso: MPLS GSO support
+[    2.559072] registered taskstats version 1
+[    2.559324] Loading compiled-in X.509 certificates
+[    2.620816] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[    2.621635] Loaded X.509 cert 'Debian Secure Boot Signer: 00a7468def'
+[    2.621919] Problem parsing in-kernel X.509 certificate list
+[    2.623063] zswap: loaded using pool lzo/zbud
+[    2.624827] Key type ._fscrypt registered
+[    2.625062] Key type .fscrypt registered
+[    2.625254] Key type fscrypt-provisioning registered
+[    2.626668] AppArmor: AppArmor sha1 policy hashing enabled
+[    2.683428] Freeing unused kernel memory: 2060K
+[    2.683748] This architecture does not have kernel memory protection.
+[    2.684109] Run /init as init process
+[    2.684375]   with arguments:
+[    2.684410]     /init
+[    2.684432]   with environment:
+[    2.684449]     HOME=/
+[    2.684463]     TERM=linux
+[    2.741506] spurious 8259A interrupt: IRQ7.
+[    3.726998] e1000: module verification failed: signature and/or required key missing - tainting kernel
+[    3.760638] ata_piix 0000:00:0a.1: version 2.13
+[    3.760898] ata_piix 0000:00:0a.1: enabling device (0000 -> 0001)
+[    3.764339] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    3.764667] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    3.765125] e1000 0000:00:13.0: enabling device (0000 -> 0003)
+[    3.825081] usbcore: registered new interface driver usbfs
+[    3.825654] usbcore: registered new interface driver hub
+[    3.826210] usbcore: registered new device driver usb
+[    3.833326] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.846413] scsi host0: ata_piix
+[    3.891439] uhci_hcd: USB Universal Host Controller Interface driver
+[    3.892939] uhci_hcd 0000:00:0a.2: UHCI Host Controller
+[    3.893824] uhci_hcd 0000:00:0a.2: new USB bus registered, assigned bus number 1
+[    3.894717] uhci_hcd 0000:00:0a.2: detected 2 ports
+[    3.895547] scsi host1: ata_piix
+[    3.896337] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x10a0 irq 14
+[    3.896657] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x10a8 irq 15
+[    3.928462] uhci_hcd 0000:00:0a.2: irq 11, io base 0x00001080
+[    3.973233] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.07
+[    3.973831] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    3.974295] usb usb1: Product: UHCI Host Controller
+[    3.974494] usb usb1: Manufacturer: Linux 5.7.0-1-5kc-malta uhci_hcd
+[    3.975017] usb usb1: SerialNumber: 0000:00:0a.2
+[    4.008653] hub 1-0:1.0: USB hub found
+[    4.019071] hub 1-0:1.0: 2 ports detected
+[    4.064494] ata2.01: NODEV after polling detection
+[    4.066248] ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[    4.068000] ata1.01: NODEV after polling detection
+[    4.068705] ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[    4.069062] ata1.00: 20971520 sectors, multi 16: LBA48 
+[    4.149531] scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[    4.183143] sd 0:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+[    4.187541] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+[    4.196070] sd 0:0:0:0: [sda] Write Protect is off
+[    4.196503] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    4.197120] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.349651]  sda: sda1
+[    4.429989] sd 0:0:0:0: [sda] Attached SCSI disk
+[    4.981471] sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[    4.982324] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    4.989858] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[    5.073747] e1000 0000:00:13.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    5.074382] e1000 0000:00:13.0 eth0: Intel(R) PRO/1000 Network Connection
+[    5.831407] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[    6.126718] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[    6.474512] systemd[1]: Inserted module 'autofs4'
+[    6.562091] systemd[1]: systemd 245.6-3 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    6.566367] systemd[1]: Detected architecture mips64.
+[    6.602703] systemd[1]: Set hostname to <debian>.
+[   10.142114] random: systemd: uninitialized urandom read (16 bytes read)
+[   10.160275] systemd[1]: Created slice system-getty.slice.
+[   10.164636] random: systemd: uninitialized urandom read (16 bytes read)
+[   10.168296] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   10.170926] random: systemd: uninitialized urandom read (16 bytes read)
+[   10.172810] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   10.176835] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   10.185550] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   10.188855] systemd[1]: Reached target Local Encrypted Volumes.
+[   10.191252] systemd[1]: Reached target Paths.
+[   10.193058] systemd[1]: Reached target Remote File Systems.
+[   10.194995] systemd[1]: Reached target Slices.
+[   10.196664] systemd[1]: Reached target Swap.
+[   10.202851] systemd[1]: Listening on Syslog Socket.
+[   10.206051] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   10.209668] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   10.217036] systemd[1]: Listening on Journal Audit Socket.
+[   10.220400] systemd[1]: Listening on Journal Socket (/dev/log).
+[   10.223842] systemd[1]: Listening on Journal Socket.
+[   10.227706] systemd[1]: Listening on udev Control Socket.
+[   10.230470] systemd[1]: Listening on udev Kernel Socket.
+[   10.232728] systemd[1]: Reached target Sockets.
+[   10.260095] systemd[1]: Mounting Huge Pages File System...
+[   10.292048] systemd[1]: Mounting POSIX Message Queue File System...
+[   10.350307] systemd[1]: Mounting Kernel Debug File System...
+[   10.372864] random: crng init done
+[   10.373295] random: 7 urandom warning(s) missed due to ratelimiting
+[   10.410403] systemd[1]: Mounting Kernel Trace File System...
+[   10.580371] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   10.617957] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   10.690372] systemd[1]: Starting File System Check on Root Device...
+[   10.859750] systemd[1]: Starting Journal Service...
+[   10.956747] systemd[1]: Starting Load Kernel Modules...
+[   11.025978] systemd[1]: Starting udev Coldplug all Devices...
+[   11.229289] systemd[1]: Mounted Huge Pages File System.
+[   11.246215] systemd[1]: Mounted POSIX Message Queue File System.
+[   11.265074] systemd[1]: Mounted Kernel Debug File System.
+[   11.304495] systemd[1]: Mounted Kernel Trace File System.
+[   11.355898] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[   11.669676] systemd[1]: Started File System Check Daemon to report status.
+[   11.900372] systemd[1]: Finished Load Kernel Modules.
+[   11.929148] systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+[   11.947916] systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+[   12.041664] systemd[1]: Starting Apply Kernel Variables...
+[   12.727495] systemd[1]: Finished File System Check on Root Device.
+[   12.789555] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   12.944424] systemd[1]: Finished Apply Kernel Variables.
+[   13.339607] systemd[1]: Finished udev Coldplug all Devices.
+[   13.398405] systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+[   13.671193] EXT4-fs (sda1): re-mounted. Opts: user_xattr,errors=remount-ro
+[   13.767480] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   13.790376] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   13.797597] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[   13.833919] systemd[1]: Starting Load/Save Random Seed...
+[   13.924250] systemd[1]: Starting Create System Users...
+[   14.752816] systemd[1]: Finished Load/Save Random Seed.
+[   14.876014] systemd[1]: Finished Create System Users.
+[   14.909452] systemd[1]: Starting Create Static Device Nodes in /dev...
+[   15.449927] systemd[1]: Finished Create Static Device Nodes in /dev.
+[   15.458278] systemd[1]: Reached target Local File Systems (Pre).
+[   15.465350] systemd[1]: Reached target Local File Systems.
+[   15.474389] systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+[   15.476123] systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+[   15.506472] systemd[1]: Starting udev Kernel Device Manager...
+[   16.400622] systemd[1]: Started udev Kernel Device Manager.
+[   17.679657] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[   17.688746] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[   18.877989] systemd[1]: Found device /dev/ttyS0.
+[   20.838404] systemd[1]: Finished Helper to synchronize boot up for ifupdown.
+[   20.901060] systemd[1]: Starting Raise network interfaces...
+[   22.296870] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   22.304893] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   22.788904] systemd[1]: Finished Raise network interfaces.
+[   22.800224] systemd[1]: Reached target Network.
+[   28.820289] systemd[1]: Started Journal Service.
+[   29.155155] systemd-journald[148]: Received client request to flush runtime journal.
